@@ -16,7 +16,11 @@ public class StepTracker {
     }
     public double averageSteps()
     {
-        double temp = totalSteps/days;
+        if (days == 0)
+        {
+            return 0.0;
+        }
+        double temp = (double)totalSteps/days;
         return temp;
     }
     public void addDailySteps(int newSteps)
