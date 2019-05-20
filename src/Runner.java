@@ -1,2 +1,3 @@
-public class Runner {
+public static  class Runner {
+
 }
