@@ -17,9 +17,8 @@ public class Runner{
         System.out.println(tr.activeDays());
         System.out.println(tr.averageSteps());
 
-        Delimiters hey= new Delimiters("</c","</o>");
-        String[] tokens= {"</c","not", "open", "</c", "</c", "</o>", "</o>", "</o>"};
-
+        Delimiters hey= new Delimiters("</o>","</c>");
+        String[] tokens= {"</c>","not", "open", "</c>", "</c>", "</o>", "</o>", "</o>"};
         System.out.println(hey.getDelimitersList(tokens));
         ArrayList<String> k=new ArrayList<>();
         for (int i=0; i<tokens.length; i++)
@@ -27,6 +26,12 @@ public class Runner{
             k.add(tokens[i]);
         }
         System.out.println(hey.isBalanced(k));
+
+        LightBoard sim= new LightBoard(8,4);
+        System.out.println(sim.evaluateLight(0,3));
+
+
+
     }
 }
 
