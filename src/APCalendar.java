@@ -18,7 +18,7 @@ public class APCalendar
         }
         return LeapCounter;
     }
-    private static int firstDayOfYear(int year)
+    public static int firstDayOfYear(int year)
     {
         return (1 + 5 * ((year - 1) % 4) + 4 * ((year -1) % 100) + 6 * ((year - 1) % 400) % 7);
     }

@@ -30,6 +30,12 @@ public class Runner{
         LightBoard sim= new LightBoard(8,4);
         System.out.println(sim.evaluateLight(0,3));
 
+         APCalendar test= new APCalendar();
+         System.out.println(test.numberOfLeapYears(1997,2019));
+        System.out.println(test.firstDayOfYear(2019));
+         System.out.println(test.dayOfWeek(0,25,2019));
+
+
 
 
     }
