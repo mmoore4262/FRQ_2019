@@ -20,7 +20,7 @@ public class APCalendar
     }
     private static int firstDayOfYear(int year)
     {
-        return (1 + 5 * ((year - 1) % 4) + 4 * ((year -1) % 100) + 6 * ((year - 1) % 7));
+        return (1 + 5 * ((year - 1) % 4) + 4 * ((year -1) % 100) + 6 * ((year - 1) % 400) % 7);
     }
     private static int dayOfYear(int month, int day, int year)
     {
