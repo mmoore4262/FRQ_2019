@@ -32,6 +32,7 @@ public class Runner{
 
          APCalendar test= new APCalendar();
          System.out.println(test.numberOfLeapYears(1997,2019));
+        System.out.println(test.firstDayOfYear(2019));
          System.out.println(test.dayOfWeek(0,25,2019));
 
 
