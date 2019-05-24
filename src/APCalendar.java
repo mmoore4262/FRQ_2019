@@ -2,7 +2,7 @@
 
 public class APCalendar
 {
-    private static boolean isLeapYear(int year)
+    public static boolean isLeapYear(int year)
     {
         return (year % 4) == 0;
     }
